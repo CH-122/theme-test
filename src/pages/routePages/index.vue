@@ -1,16 +1,13 @@
-<template>
-  <div>
-    index
+<script lang="ts">
+import { defineComponent } from "vue";
+import BasePage from "../basePage.vue";
 
-    {{ appConfigStore.name }}
-  </div>
-</template>
+// import useAppConfigStore from "@/store/appConfig.ts";
 
-<script setup lang="ts">
-import useAppConfigStore from '@/store/appConfig.ts'
-
-const appConfigStore = useAppConfigStore()
+// const appConfigStore = useAppConfigStore();
+export default defineComponent({
+  name: "index",
+  extends: BasePage,
+  setup: BasePage.setup,
+});
 </script>
-
-<style lang="scss" scoped>
-</style>

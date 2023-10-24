@@ -7,10 +7,9 @@
 </template>
 
 <script setup lang="ts">
-import useAppConfigStore from '@/store/appConfig.ts'
+import useAppConfigStore from "@/store/appConfig.ts";
 
-const appConfigStore = useAppConfigStore()
+const appConfigStore = useAppConfigStore();
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

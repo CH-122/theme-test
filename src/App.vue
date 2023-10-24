@@ -1,7 +1,15 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
+  <router-link to="/home">
+    <el-button>home</el-button>
+  </router-link>
+  <router-link to="/index">
+    <el-button>index</el-button>
+  </router-link>
+  <router-link to="/about">
+    <el-button>about</el-button>
+  </router-link>
   <RouterView></RouterView>
 </template>
 

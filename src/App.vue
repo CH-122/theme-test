@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <router-link to="/home">
     <el-button>home</el-button>
@@ -12,6 +10,8 @@
   </router-link>
   <RouterView></RouterView>
 </template>
+
+<script setup lang="ts"></script>
 
 <style scoped>
 .logo {

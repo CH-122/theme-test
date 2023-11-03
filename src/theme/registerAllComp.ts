@@ -1,4 +1,5 @@
 import { App, Component, defineAsyncComponent } from "vue";
+import useAppConfigStore from "@/store/appConfig";
 
 export default function registerAllComp(app: App<Element>) {
   const files: Record<string, () => Promise<Component>> = import.meta.glob(
@@ -17,11 +18,10 @@ export default function registerAllComp(app: App<Element>) {
         ""
       );
     });
-
-    console.log(name);
+    useAppConfigStore().compNameList.push(name);
 
     app.component(name, defineAsyncComponent(files[item]));
   }
 
-  console.log(files);
+  console.log(useAppConfigStore().compNameList);
 }

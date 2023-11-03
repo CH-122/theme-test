@@ -1,5 +1,5 @@
 <template>
-  <div>oppo home</div>
+  <div>页面不存在</div>
 </template>
 
 <script setup lang="ts"></script>

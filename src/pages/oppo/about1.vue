@@ -1,5 +1,5 @@
 <template>
-  <div>oppo home</div>
+  <div>oppo about</div>
 </template>
 
 <script setup lang="ts"></script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    index
+    oppo index
 
     {{ appConfigStore.name }}
   </div>

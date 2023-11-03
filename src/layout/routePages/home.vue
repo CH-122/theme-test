@@ -1,11 +1,13 @@
-<template>
-  <div>
-    home
-  </div>
-</template>
+<script lang="ts">
+import { defineComponent } from "vue";
+import BasePage from "../basePage.vue";
 
-<script setup lang="ts">
+// import useAppConfigStore from "@/store/appConfig.ts";
+
+// const appConfigStore = useAppConfigStore();
+export default defineComponent({
+  name: "home",
+  extends: BasePage,
+  setup: BasePage.setup,
+});
 </script>
-
-<style scoped>
-</style>

@@ -9,7 +9,7 @@ const routes = [
     component: () => import("../layout/routePages/index.vue"),
   },
   {
-    name: "home",
+    name: "home1",
     path: "/home",
     component: () => import("../layout/routePages/home.vue"),
   },

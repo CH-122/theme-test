@@ -8,8 +8,8 @@ const useAppConfigStore = defineStore("appConfigStore", {
   } => {
     return {
       name: "lala",
-      code: "oppo",
-      // code: "default",
+      // code: "oppo",
+      code: "default",
       compNameList: [],
     };
   },

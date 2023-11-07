@@ -12,6 +12,9 @@ export default function registerAllComp(app: App<Element>) {
   for (const item in files) {
     const names = item.replace("/src/pages/", "").split("/");
     let name = "";
+
+    console.log("names", names);
+
     names.forEach((nameItem) => {
       name += (nameItem.charAt(0).toUpperCase() + nameItem.slice(1)).replace(
         ".vue",

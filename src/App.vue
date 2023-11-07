@@ -1,17 +1,35 @@
 <template>
-  <router-link to="/home">
-    <el-button>home</el-button>
-  </router-link>
-  <router-link to="/index">
-    <el-button>index</el-button>
-  </router-link>
-  <router-link to="/about">
-    <el-button>about</el-button>
-  </router-link>
-  <RouterView></RouterView>
+  <el-button type="primary" @click="changeCode">changeCode</el-button>
+  <component :is="dealLoyout"></component>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import DefaultLayout from "@/layout/layoutComp/DefaultLayout.vue";
+import OppoLayout from "@/layout/layoutComp/OppoLayout.vue";
+import { computed } from "vue";
+import useAppConfigStore from "@/store/appConfig.ts";
+import { storeToRefs } from "pinia";
+
+const appConfigStore = useAppConfigStore();
+
+const { code } = storeToRefs(appConfigStore);
+
+const dealLoyout = computed(() => {
+  if (code.value === "oppo") {
+    return OppoLayout;
+  } else {
+    return DefaultLayout;
+  }
+});
+
+const changeCode = () => {
+  if (code.value === "oppo") {
+    code.value = "default";
+  } else {
+    code.value = "oppo";
+  }
+};
+</script>
 
 <style scoped>
 .logo {

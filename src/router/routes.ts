@@ -9,9 +9,25 @@ const routes = [
     component: () => import("../layout/routePages/index.vue"),
   },
   {
-    name: "home1",
+    name: "home",
     path: "/home",
     component: () => import("../layout/routePages/home.vue"),
+    children: [
+      // {
+      //   path: "/home",
+      //   redirect: "/home/children1",
+      // },
+      {
+        name: "homeChildren1",
+        path: "children1",
+        component: () => import("../layout/routePages/home/children1.vue"),
+      },
+      {
+        name: "homeChildren2",
+        path: "children2",
+        component: () => import("../layout/routePages/home/children2.vue"),
+      },
+    ],
   },
   {
     name: "about",

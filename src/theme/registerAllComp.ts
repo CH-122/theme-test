@@ -23,6 +23,8 @@ export default function registerAllComp(app: App<Element>) {
     });
     useAppConfigStore().compNameList.push(name);
 
+    console.log(useAppConfigStore().compNameList.push(name));
+
     app.component(name, defineAsyncComponent(files[item]));
   }
 

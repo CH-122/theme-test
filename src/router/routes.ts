@@ -21,6 +21,14 @@ const routes = [
         name: "homeChildren1",
         path: "children1",
         component: () => import("../layout/routePages/home/children1.vue"),
+        children: [
+          {
+            name: "homeChildren1Children1",
+            path: "children1",
+            component: () =>
+              import("../layout/routePages/home/children1/children1.vue"),
+          },
+        ],
       },
       {
         name: "homeChildren2",

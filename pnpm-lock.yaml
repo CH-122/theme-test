@@ -4,6 +4,7 @@ specifiers:
   '@types/node': ^20.8.7
   '@vitejs/plugin-vue': ^4.2.3
   element-plus: ^2.4.1
+  mddir: ^1.1.1
   pinia: ^2.1.7
   typescript: ^5.0.2
   unocss: ^0.57.2
@@ -16,6 +17,7 @@ specifiers:
 
 dependencies:
   element-plus: 2.4.1_vue@3.3.5
+  mddir: 1.1.1
   pinia: 2.1.7_typescript@5.2.2+vue@3.3.5
   vue: 3.3.5_typescript@5.2.2
   vue-router: 4.2.5_vue@3.3.5
@@ -1159,6 +1161,12 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
+
+  /mddir/1.1.1:
+    resolution: {integrity: sha512-VkBEnXdqoCTC5TLzuA8ITGgb3278sl2HQ9xWCEBK4viZXiyl9IzFRXQ+41x16Z9ODzVabSeRsPWGaD+KbigG6Q==}
+    engines: {node: '>=0.10.0'}
+    hasBin: true
+    dev: false
 
   /mdn-data/2.0.30:
     resolution: {integrity: sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==}

@@ -16,7 +16,7 @@ const { code } = storeToRefs(appConfigStore);
 const route = useRoute();
 
 const dealComponent = computed(() => {
-  let routeName = route.matched[1].name as string;
+  let routeName = route.matched[2].name as string;
 
   console.log(route);
 

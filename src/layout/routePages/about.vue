@@ -1,13 +1,9 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import BasePage from "../basePage.vue";
-
-// import useAppConfigStore from "@/store/appConfig.ts";
-
-// const appConfigStore = useAppConfigStore();
-export default defineComponent({
-  name: "about",
-  extends: BasePage,
-  setup: BasePage.setup,
-});
+<template>
+  <component :is="dealComponent('oppo', 'about')"></component>
+</template>
+<script setup lang="ts">
+import { getCurrentComp } from "../../theme/themeUtils";
+const dealComponent = (theme: string, name: string) => {
+  return getCurrentComp(theme, name);
+};
 </script>

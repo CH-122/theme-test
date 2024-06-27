@@ -1,13 +1,7 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import BasePage from "../basePage.vue";
+<template>
+  <ThemeSelector name="home"></ThemeSelector>
+</template>
 
-// import useAppConfigStore from "@/store/appConfig.ts";
-
-// const appConfigStore = useAppConfigStore();
-export default defineComponent({
-  name: "home",
-  extends: BasePage,
-  setup: BasePage.setup,
-});
+<script setup lang="ts">
+import ThemeSelector from "../ThemeSelector.vue";
 </script>
